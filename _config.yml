@@ -1,0 +1,7 @@
+title: formism
+
+# Build settings
+markdown: kramdown
+
+collections:
+- projects

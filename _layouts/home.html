@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+	<link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+
+	<header class="container">
+	<div class="content">
+		<h1 class="col-a">formism</h1>
+
+		<div class="statement">berlin/paris. interfacing societies and new technologies</div>
+
+		<nav class="col-b-d">
+			<a>critical information architecture</a>
+			<a>human&amp;social sciences</a>
+			<a>generative design</a>
+			<a>data visualization</a>
+		</nav>
+	</div>
+	</header>
+
+<!--
+  <% @projects.sort_by{ |b| [ b.meta['year'], b.meta['priority'] ]  }.reverse.each do |p| %>
+ -->
+
+  {% assign projects =  site.projects | sort: "year" %}
+  {% for project in projects reversed %}
+
+  <section class="container project">
+  	<div class="container">
+  		<div class="content">
+  			<h3 class="col-a">{{ project.title }}</h3>
+  			<div class="year">{{ project.year }}</div>
+  		</div>
+  	</div>
+  	<div class="content">
+  		{{ project.content }}
+  	</div>
+  </section>
+  {% endfor %}
+
+  <section id="publications" class="container">
+  	<div class="container">
+  		<div class="content">
+  			<h3 class="col-a">Blablah</h3>
+  		</div>
+  	</div>
+
+  	<div class="content multi-col">
+  		<div class="col col-a">
+  			<h4>articles</h4>
+
+  			<ul>
+  			<li>A multi-agent model of cooperative and competitive strategies in supply chain<br />
+  				<span>2007 &#8211; Yihong Hu,  Joël Houdet &#038; Tam-Kien Duong</span></li>
+  			</ul>
+
+  			<h4>liens socio</h4>
+  			<ul>
+  			<li><a href="http://lectures.revues.org/835">Le commerce des idées philosophiques (dir. Louis Pinto)</a></li>
+  			<li><a href="http://lectures.revues.org/913">Les vertiges de la techno-science (Bernadette Bensaude-Vincent)</a></li>
+  			<li><a href="http://lectures.revues.org/1007">Le passage à l’écriture. Mutation culturelle et devenir des savoirs dans une société de l’oralité (Geoffroy A Dominique Botoyiyê)</a></li>
+  			<li><a href="http://lectures.revues.org/1065">Hémisphère gauche. Une cartographie des nouvelles pensées critiques (Razmig Keucheyan)</a></li>
+  			<li><a href="http://lectures.revues.org/6929">La neutralité de l'internet (dir. Valérie Schafer, Hervé Le Crosnier)</a></li>
+  			</ul>
+  		</div>
+  		<div class="col col-b-c">
+  			<h4>talks</h4>
+
+  			<ul>
+  			<li><strong>Interfaces innovantes (clés de lecture)</strong><br />Sharing day pour l&#8217;agence heaven<br />
+  			<span>2009 &#8211; Tam-Kien Duong</span></li>
+  			<li><strong>Exploration de la communauté online du Parkour</strong><br />
+  			Journée d&#8217;étude « pratiques ethnographiques sur internet »<br />
+  			<span class="author list">2009 &#8211; Emmanuel Berne &amp; Tam-Kien Duong</span></li>
+  			<li><strong>multipliCity Disorder : La complexité au service de la pluralité</strong><br />
+  			Séminaire « esthétique et complexité » de l&#8217;Institut des Systèmes Complexes de Paris Île-de-France<br />
+  			<span class="author list">2008 &#8211; Angélique Chedemois, Aleksandra Wasilkowska &amp; Tam-Kien Duong</span></li>
+  			</ul>
+
+  		</div>
+  		<div class="col col-d">
+  			<h4>surveys</h4>
+
+  			<ul>
+  			<li><strong>Les publics et non-publics de l&#8217;Espace Simone Signoret</strong><br />Enquête par entretiens et questionnaires. Recherche-action<br /><span>2006  &#8211; Espace Simone Signoret (Vitry le François)</span></li>
+  			<li><strong>Le devenir des étudiants inscrit en DESS en 2002-2003</strong><br />Enquête par questionnaires et entretiens téléphoniques<br /><span>2005  &#8211; Observatoire de l&#8217;Insertion Professionnelle de l&#8217;université Paris IV Sorbonne</span></li>
+  			<li><strong>L&#8217;analyse empirique de la gratuité. Le cas de la Bibliothèque Nationale de France</strong><br />Enquête par questionnaires et observations<br /><span> 2004 &#8211; Département des études et de la prospective de la Bibliothèque Nationale de France</span></li>
+  			</ul>
+
+  		</div>
+  	</div>
+
+  </section>
+
+  {% include who.html %}
+
+	<footer class="container">
+		<div class="content">
+		<div id="contact">
+		<h2><a href="http://formism.net">formism</a></h2>
+
+		<p class="email">email : tk@deveha.com</p>
+		<p class="twitter">twitter : @taniki</p>
+
+		</div>
+    	</div>
+	</footer>
+
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-3293848-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+  </body>
+</html>

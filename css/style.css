@@ -1,0 +1,301 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'avenirmedium';
+    src: url('/css/fonts/avenir_lt_65_medium-webfont.eot#') format('eot'),
+         url('/css/fonts/avenir_lt_65_medium-webfont.woff') format('woff'),
+         url('/css/fonts/avenir_lt_65_medium-webfont.ttf') format('truetype'),
+         url('/css/fonts/avenir_lt_65_medium-webfont.svg#webfontw95syvJN') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face { font-family: Museo300; src: url('/css/fonts/Museo300-Regular.otf'); }
+@font-face { font-family: Museo500; src: url('/css/fonts/Museo500-Regular.otf'); }
+@font-face { font-family: Museo700; src: url('/css/fonts/Museo700-Regular.otf'); }
+
+body {
+
+	font-family : Museo300, arial;
+}
+
+.container {
+	position : relative;
+	clear : both;
+	overflow : visible;
+}
+
+.container > .container {
+	border-top : 1px solid #666666;
+	border-bottom : 1px solid #666666;
+
+	margin-bottom : 20px;
+}
+
+.container > .content {
+	width : 968px;
+	margin : 0 auto;
+	position : relative;
+
+	clear : both;
+
+	overflow : visible;
+}
+
+.container .multi-col {
+	margin : 5px auto;
+	overflow : hidden;
+}
+
+.container .multi-col .col {
+	float : left;
+}
+
+.container .col {
+	overflow : visible;
+}
+
+
+.col-a {
+	width : 320px;
+}
+
+.col-d {
+	width : 320px;
+	margin-left : 4px;
+}
+
+.col-d h4 {  padding-left : 4px; }
+.col-d p {  padding-left : 4px; }
+
+.col-b-c {
+	width : 320px;
+	margin-left : 4px;
+}
+
+.col-b-d {
+	width : 644px;
+	margin-left : 4px;
+}
+
+header {
+	margin-top : -24px;
+	margin-bottom : 57px;
+	border-bottom: 1px solid #DFDFDF;
+
+	position : relative;
+}
+
+header h1 {
+	background : url('/images/formism_logo.svg') no-repeat;
+	background-size : 110px;
+	height : 110px;
+
+	font : normal 54px/110px avenirmedium;
+	text-align : right;
+	position : relative;
+	bottom : -33px;
+}
+
+header .statement {
+	position : absolute;
+	left : 327px;
+	bottom : 7px;
+
+	font : normal 14px/15px Museo300, arial;
+	color : #999;
+}
+
+nav.col-b-d  {
+	width : 642px;
+
+	position : absolute;
+	bottom : -35px;
+	margin-left : 325px;
+	border : 1px solid #DFDFDF;
+	height : 33px;
+}
+
+section h4+* {
+	margin-bottom : 2em;
+}
+
+nav a {
+	display : block;
+	float : left;
+	padding : 0 7px;
+	font : normal 14px/33px officina, Museo300, arial;
+
+	border-right : 1px solid #DFDFDF;
+	background : white;
+	color : #666666;
+}
+
+nav a:hover {
+	background : #DFDFDF;
+	cursor : pointer;
+}
+
+nav a:last-of-type {
+	border : 0;
+}
+
+nav a:hover:last-of-type {
+	border-right :  2px solid #DFDFDF;
+}
+
+section {
+	margin-bottom : 20px;
+}
+
+section h3.col-a {
+	font : normal 36px/43px Museo500, arial;
+	width : 310px;
+	color : white;
+	background : #666666;
+	padding-left : 10px;
+}
+
+
+
+section h4 {
+	font-family : Museo700;
+	color : #666666;
+	margin-bottom : 0.5em;
+}
+
+
+.content p, .content ul {
+	font-size : 12px;
+	line-height : 18px;
+	color : #666666;
+
+	margin-bottom : 1em;
+	margin-right : 4px;
+}
+
+.content ul {
+	list-style : square;
+	margin-left : 1.5em;
+}
+
+.content li {
+	margin-bottom : 0.5em;
+}
+
+.content img {
+	margin-bottom : 10px;
+
+/*	-webkit-box-shadow: 0px 1px 4px #757575;
+	-moz-box-shadow: 0px 1px 4px #757575;
+	box-shadow: 0px 1px 4px #757575;*/
+}
+
+.content img.no_shadow {
+	margin-bottom : 10px;
+
+	-webkit-box-shadow: 0px 0px 0px;
+	-moz-box-shadow: 0px 0px 0px;
+	box-shadow: 0px 0px 0px;
+}
+
+
+.content .vrac img {
+	margin-right : 4px;
+	float : left;
+
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+
+.content .col img:last-child {
+	margin-right : 0px;
+}
+
+.content span {
+	color : #B9B9B9;
+}
+
+.content span.position {
+	background : #DBB1BB;
+	color : #CD025F;
+	padding : 0 3px;
+}
+
+.content .col a {
+	color : #B71E45;
+}
+
+.content strong {
+	font-family : Museo500;
+}
+
+.project .year {
+	position : absolute;
+	top : 0;
+	left : 325px;
+	font : normal 36px/43px Museo500, arial;
+	color : #CCCCCC;
+}
+
+#who {
+	padding-bottom : 40px;
+}
+
+#who .container {
+	border-color : #BF6212;
+}
+
+#who h3 {
+	background : #BF6212;
+}
+
+#who .statement {
+	font : normal 20px/24px Museo300, arial;
+	color : #464646;
+
+	padding-bottom : 1.5em;
+}
+
+
+footer {
+	margin-top : 45px;
+	border-top : 1px solid #DFDFDF;
+}
+
+footer > .content {
+	min-height : 126px;
+
+	background : url('/images/formism_logo_grey.svg') no-repeat;
+	background-size : 86px;
+
+	position : relative;
+	top : -25px;
+}
+
+footer > .content > div {
+	margin-left : 91px;
+	padding-top : 25px;
+
+	font : normal 12px/14px arial;
+	color : #666666;
+}
+
+footer > .content h2 {
+	margin-top : 6px;
+	margin-bottom : 10px;
+
+	font : normal 36px/36px avenirmedium;
+}
+
+footer > .content a {
+	text-decoration : none;
+	color : black;
+}
+
+footer > .content p {
+	margin-bottom : 0;
+}
+
+/* #contact .email { margin-bottom : 1em; } */
