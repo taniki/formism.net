@@ -39,7 +39,7 @@ priority : 1
 
 <p>The website source code is available on github : <a href="https://github.com/taniki/pulseweb">taniki/pulseweb</a>. It relies mainly on python for the server part and javascript (<a href="paperjs.org">paperjs</a>) for the front-end.</p>
 
-<p>We also used scriptographer to produce infographics for the <a href="http://pulseweb.veilledynamique.com/static/files/wp1.pdf">white paper</a>.</a>
+<p>We also used scriptographer to produce infographics for the <a href="http://pulseweb.veilledynamique.com/static/files/wp1.pdf">white paper</a>.</p>
 
 </div>
 
